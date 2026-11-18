@@ -1,0 +1,60 @@
+body { font-family: system-ui, -apple-system, sans-serif; margin: 0; background-color: #f4f6f8; color: #1e293b; }
+.nav { background-color: #0f172a; padding: 15px 40px; display: flex; gap: 24px; align-items: center; color: #ffffff; }
+.nav strong { font-size: 16px; }
+.nav a { color: #cbd5e1; text-decoration: none; font-size: 14px; }
+.nav a:hover { color: #ffffff; }
+.container { max-width: 900px; margin: 40px auto; padding: 0 20px; display: block; }
+h1 { font-size: 26px; margin-bottom: 20px; color: #0f172a; }
+
+/* Bilah pencarian & filter (Bab 12) */
+.toolbar { display: flex; gap: 8px; align-items: center; margin-bottom: 16px; flex-wrap: wrap; }
+.toolbar input[type="text"],
+.toolbar select { padding: 8px 12px; border: 1px solid #cbd5e1; border-radius: 5px; font-size: 14px; background-color: #ffffff; }
+
+/* Tombol */
+.btn { display: inline-block; background-color: #158078; color: #ffffff; padding: 8px 14px; border-radius: 5px; text-decoration: none; font-size: 14px; border: none; cursor: pointer; }
+.btn:hover { background-color: #0f665f; }
+.btn-light { background-color: #e2e8f0; color: #1e293b; padding: 7px 12px; font-size: 13px; border-radius: 5px; text-decoration: none; }
+.btn-light:hover { background-color: #cbd5e1; }
+.btn-danger { background-color: #e11d48; color: #ffffff; padding: 6px 10px; border-radius: 5px; border: none; font-size: 13px; cursor: pointer; }
+.btn-danger:hover { background-color: #be123c; }
+
+/* Tabel & Thumbnail Foto (Bab 11) */
+table { width: 100%; border-collapse: collapse; background-color: #ffffff; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+th { background-color: #158078; color: #ffffff; text-align: left; padding: 12px 15px; font-size: 14px; }
+td { padding: 12px 15px; border-bottom: 1px solid #e2e8f0; font-size: 14px; vertical-align: middle; }
+tr:hover { background-color: #f8fafc; }
+.thumb { width: 48px; height: 48px; object-fit: cover; border-radius: 6px; border: 1px solid #e2e8f0; display: block; }
+.muted { color: #94a3b8; font-size: 13px; }
+.badge-warn { background-color: #fef3c7; color: #b45309; padding: 2px 7px; border-radius: 4px; font-size: 12px; font-weight: 600; margin-left: 4px; }
+
+/* Form & Card (Diperbarui agar kolom Kategori, Harga, Stok sejajar penuh) */
+.card { background: #ffffff; padding: 24px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); max-width: 520px; }
+.form label { display: block; margin-top: 14px; margin-bottom: 6px; font-weight: 600; font-size: 14px; }
+.form input[type="text"],
+.form input[type="number"],
+.form select { width: 100%; padding: 9px 12px; border: 1px solid #cbd5e1; border-radius: 5px; box-sizing: border-box; font-size: 14px; background-color: #ffffff; }
+.form input[type="file"] { display: block; margin-top: 6px; margin-bottom: 16px; font-size: 14px; }
+.form button[type="submit"],
+.toolbar button[type="submit"] { background-color: #158078; color: #ffffff; padding: 8px 16px; border: none; border-radius: 5px; cursor: pointer; font-size: 14px; margin-right: 6px; }
+.form button[type="submit"]:hover,
+.toolbar button[type="submit"]:hover { background-color: #0f665f; }
+.error { display: block; color: #e11d48; font-size: 13px; margin-top: 4px; }
+
+/* Alert / Pesan Sukses */
+.alert.alert-success {
+    background-color: #dcfce7;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* Pagination Links (Bab 12) */
+ul.pagination { display: flex; list-style: none; padding: 0; gap: 6px; margin-top: 18px; }
+ul.pagination li a,
+ul.pagination li span { display: inline-block; padding: 6px 12px; border: 1px solid #cbd5e1; border-radius: 5px; background: #ffffff; color: #1e293b; text-decoration: none; font-size: 14px; }
+ul.pagination li.active a,
+ul.pagination li.active span { background-color: #158078; color: #ffffff; border-color: #158078; }
